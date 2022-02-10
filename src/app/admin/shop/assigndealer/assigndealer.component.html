@@ -1,0 +1,73 @@
+<br>
+<br>
+<form action="" (ngSubmit)="assigndealer()">
+<div class="container register-form">
+    <div class="form">
+        <div class="note">
+            <p>Assign Dealer to Shop</p>
+        </div>
+
+        <div class="form-content">
+            <div class="row">
+                <div class="form-group">
+                    <input type="number" class="form-control" placeholder="Assigned Code *" value="" name="assigncode" [(ngModel)]="assign.areaCode">
+                </div>
+                
+                <div class="col-md-6">
+                    <br>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Dealer Areacode *" value="" name="dealercode" [(ngModel)]="assign.dealers.areaCode">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Region *" value="" name="regions" [(ngModel)]="assign.dealers.region">
+                    </div>
+
+                    <br>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Dealer Id *" value="" name="dealer_id" [(ngModel)]="assign.dealers.dealer_id">
+                    </div>
+                    <br>
+                     <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Dealer Name *" value="" name="dealername" [(ngModel)]="assign.dealers.dealer_name">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Mail Id *" value="" name="eamil" [(ngModel)]="assign.dealers.mail_ID">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Contact Number *" value="" name="numbers" [(ngModel)]="assign.dealers.contactNumber">
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <br>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Shop Areacode *" value="" name="shoparea" [(ngModel)]="assign.shops.areaCode">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Region*" value="" name="regions" [(ngModel)]="assign.shops.region">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Shop Id *" value="" name="shopid" [(ngModel)]="assign.shops.shop_id">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Shop Name *" value="" name="shopname" [(ngModel)]="assign.shops.shop_name">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Contact Number*" value="" name="numberc" [(ngModel)]="assign.shops.contactNumber">
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btnSubmit" value="ADD">ADD</button>
+        </div>
+    </div>
+</div>
+</form> 

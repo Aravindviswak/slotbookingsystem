@@ -1,0 +1,28 @@
+<table class="table table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Sno</th>
+        <th scope="col">AreaCode</th>
+        <th scope="col">Region</th>
+        <th scope="col">Shop_id</th>
+        <th scope="col">Shop_name</th>
+        <th scope="col">ContactNumber</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr  *ngFor="let items of Shopdetails;let i=index">
+        <!-- <th scope="row">1</th> -->
+        <td>{{i+1}}</td>
+        <td>{{items.areaCode}}</td>
+    <td>{{items.region}}</td>
+    <td>{{items.shop_id}}</td>
+    <td>{{items.shop_name | uppercase}}</td>
+    <td>{{items.contactNumber}}</td>
+    <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+
+      </tr>
+     
+    </tbody>
+  </table>

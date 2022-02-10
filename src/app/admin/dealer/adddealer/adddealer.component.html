@@ -1,0 +1,48 @@
+
+<form (ngSubmit)="adddealer()">
+    <label>
+        <p class="label-txt">Enter Areacode</p>
+        <input type="number" class="input" name="number" [(ngModel)]="dealer.areaCode">
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+      </label>
+      <label>
+        <p class="label-txt">Enter Region</p>
+        <input type="text" class="input" name="dealername" [(ngModel)]="dealer.region">
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+      </label>
+
+    <label>
+      <p class="label-txt"> Dealer_ID</p>
+      <input type="number" class="input" name="dealerID" [(ngModel)]="dealer.dealer_id">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    
+    <label>
+      <p class="label-txt">Enter Dealer Name </p>
+      <input type="text" class="input" name="dealername" [(ngModel)]="dealer.dealer_name">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <label>
+        <p class="label-txt">Enter Email:</p>
+        <input type="email" class="input" name="email" [(ngModel)]="dealer.mail_ID">
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+      </label>
+      <label>
+        <p class="label-txt">Enter ContactNumber:</p>
+        <input type="number" class="input" name="number" [(ngModel)]="dealer.contactNumber">
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+      </label>
+    <button type="submit">Add Dealer</button>
+  </form>

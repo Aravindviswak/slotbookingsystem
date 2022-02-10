@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>AreaCode</th>
+        <th>Time</th>
+        <th>Date</th>
+    </tr>
+    <tr *ngFor="let items of show;">
+        <td>{{items.name}}</td>
+        <td>{{items.areaCode}} </td>
+        <td>{{items.slot_timing}} </td>
+        <td>{{items.visitingDate}} </td>
+    </tr>
+</table>

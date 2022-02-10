@@ -1,0 +1,25 @@
+<form (ngSubmit)="Addshop()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">AreaCode</label>
+      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="AreaCode" name="number" [(ngModel)]="AddDetails.areaCode">
+      
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Region</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Region" name="region" [(ngModel)]="AddDetails.region">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Shop Id</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Shop Id" name="shopid" [(ngModel)]="AddDetails.shop_id">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Shop Name</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Shop Name" name="shopname" [(ngModel)]="AddDetails.shop_name">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Number</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Contact Number" name="contact" [(ngModel)]="AddDetails.contactNumber">
+      </div>
+    
+    <button type="submit" class="btn btn-primary">Add Shop</button>
+  </form>

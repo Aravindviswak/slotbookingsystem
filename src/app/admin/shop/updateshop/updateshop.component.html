@@ -1,0 +1,47 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<form (ngSubmit)="editshop()">
+  <label>
+    <p class="label-txt">ENTER areaCode</p>
+    <input type="number" class="input" name="region" [(ngModel)]="updtes.areaCode">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">ENTER Region</p>
+    <input type="text" class="input" name="region" [(ngModel)]="updtes.region">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">ENTER Shop_ID</p>
+    <input type="number" class="input" name="dealerid" [(ngModel)]="updtes.shop_id">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">ENTER Shop Name</p>
+    <input type="text" class="input" name="dealername" [(ngModel)]="updtes.shop_name">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+
+  
+
+  <label>
+    <p class="label-txt"> Contact Number</p>
+    <input type="number" class="input" name="numbeer" [(ngModel)]="updtes.contactNumber">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <button type="submit">EDIT</button>
+</form>

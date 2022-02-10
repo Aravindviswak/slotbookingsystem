@@ -1,0 +1,32 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Indian_foreign_service_GOI.jpg" id="icon" alt="User Icon" />
+      <h1>Admin</h1>
+    </div>
+
+    <!-- Login Form -->
+    <form (ngSubmit)="adminlogin()">
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="username" [(ngModel)]="admin.email"><br>
+      <span style="color: red;height: 30px;" *ngIf="isUserError">{{errorMsg}}</span>
+      <input type="password" id="password" class="fadeIn third" name="loginn" placeholder="password" [(ngModel)]="admin.password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <!-- <a class="underlineHover" href="#">Go to the Site</a> -->
+    </div>
+
+  </div>
+</div>

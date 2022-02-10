@@ -1,0 +1,12 @@
+<table>
+    <tr><th>S.NO</th><th>Name</th><th>Time</th><th>Areacode</th> <th>Date</th></tr>
+    <tr *ngFor="let item of slotdetails; let i=index" >
+    <td>{{i+1}}</td>
+    <td>{{item.name }}</td>
+    <td>{{item.slot_timing}}</td>
+    <td>{{item.areaCode}}</td>
+    <td>{{item.visitingDate}}</td>
+    
+    
+</tr>
+</table>

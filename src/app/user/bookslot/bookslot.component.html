@@ -1,0 +1,58 @@
+<div style="background-color: aquamarine; padding-bottom: 30%;">
+<section class="h-100 h-custom" >
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-8 col-xl-6">
+          <div class="card rounded-3">
+            <img src="https://static.toiimg.com/thumb/msid-80626458,width-1200,height-900,resizemode-4/.jpg" class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;" alt="Sample photo">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
+  
+              <form class="px-md-2" (ngSubmit)="slotbook()">
+  
+                <div class="form-outline mb-4">
+                    
+                  UserName:<input type="text" id="form3Example1q" class="form-control" name=" user" [(ngModel)]="slot.name">
+                  
+                </div>
+  
+                
+                  <div class="form-outline mb-4">
+  
+                    <div class="form-outline datepicker">
+                       
+                     Visiting Date: <input type="date" class="form-control" id="exampleDatepicker1" name="dates" [(ngModel)]="slot.visitingDate">
+                      
+                    
+  
+                  </div>
+                 
+
+  
+                  
+                </div>
+               
+                  <p>Booking Start at 9:30 to 5:30</p>
+                  <div class="form-outline mb-4">
+                    
+                  Slot Time:  <input type="time" id="form3Example1q" class="form-control" name="times" [(ngModel)]="slot.slot_timing">
+                    
+                  </div>
+                  <div class="form-outline mb-4">
+                    
+                  AreaCode:  <input type="number" id="form3Example1q" class="form-control" name="arescode" [(ngModel)]="slot.areaCode">
+                    
+                  </div>
+                 
+  
+                <button type="submit" class="btn btn-success btn-lg mb-1"  >BOOK</button>
+  
+              </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

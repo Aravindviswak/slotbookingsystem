@@ -1,0 +1,38 @@
+<!-- Default form register -->
+<form class="text-center border border-light p-5" (ngSubmit)="signUpUser()" style="width: 50%;
+background: #f0f0f0;
+margin: 5% 10% 10% 28%;">
+
+    <p class="h4 mb-4">Sign up</p>
+
+    <div class="form-row mb-4">
+      <div class="col">
+       
+        <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" name="firstName" [(ngModel)]="user.firstName" required>
+      </div>
+      <br>
+      <div class="col">
+     
+        <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name" name="lastname" [(ngModel)]="user.lastName" required>
+      </div>
+    </div>
+
+  
+    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" name="email" [(ngModel)]="user.email" required>
+
+   
+    <input type="password" id="defaultRegisterFormPassword" class="form-control mb-4" placeholder="Password" name="password" [(ngModel)]="user.password" aria-describedby="defaultRegisterFormPasswordHelpBlock" required>
+    
+    <input type="number" id="defaultRegisterPhonePassword" class="form-control mb-4" placeholder="Phone number" name="number" [(ngModel)]="user.contactNumber" aria-describedby="defaultRegisterFormPhoneHelpBlock" required>
+    <input type="text" id="defaultRegisterPhonePassword" class="form-control mb-4" placeholder="Address" name="region" [(ngModel)]="user.region" aria-describedby="defaultRegisterFormPhoneHelpBlock" required>
+
+
+    <button mdbBtn color="info" block="true" class="my-4" type="submit" >Sign Up</button>
+    <!-- <a routerLink="/popup"></a> -->
+    
+
+    <hr>
+
+    
+  </form>
+ 
